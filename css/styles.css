@@ -13,7 +13,6 @@
 li{
     list-style-type: none;
 }
-}
 .body{
     background-color: var(--main-bacground-color);
     color: var(--primary-text-color);
@@ -158,6 +157,9 @@ line-height: 1.9;
 }
     
  /* Footer */
+ .footer {
+    background-color:  #2F303A;
+ }
  .map {
      color: var(--head-text-color);
     font-family: "Roboto";
@@ -187,25 +189,21 @@ line-height: 1.71;
      background-color: var(--acent-color);
      color: var(--head-text-color);
  }
-
- }
- .tel {
-     color:  rgba(255, 255, 255, 0.6;
+.telephone{
+    color: rgba(255, 255, 255, 0.6);
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    text-decoration: none;
- }
- .tel:hover,
- .tel:focus { background-color: var(--acent-color);
-    color: var(--head-text-color);
+        text-decoration: none;
+}
+.telephone:hover,
+.telephone:focus{
+    background-color: var(--acent-color);
+     color: var(--head-text-color);
+}
 
- }
- .footer {
-     background-color: #2F303A;
- }
 
  /* Potfolio */
 .button-portfolio {
