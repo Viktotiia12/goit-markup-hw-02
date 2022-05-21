@@ -5,35 +5,57 @@
     --acent-color: #2196F3;
     --main-bacground-color:#E5E5E5;
     --bacground-hero-color:#2F303A;
-    --text-team-color #F5F4FA;
-    --footer-text-color rgba(255, 255, 255, 0.6);
-    --backgroun-footer-color #2F303A;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    --backgroun-footer-color: #2F303A;
 
 }
-li{
-    list-style-type: none;
-}
-.body{
+body{
     background-color: var(--main-bacground-color);
     color: var(--primary-text-color);
     font-family: "Roboto", sans-serif;
-    color: var(--primary-text-color);
+    font-size: 14px;
     letter-spacing: 0.03em
+}
+button {
+    cursor: pointer;
+    }
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 
 }
+
+.list{
+    list-style-type: none;
+    padding: left 0; 
+    margin: 0;
+}
+.link {
+    text-decoration: none;
+}
+
 .logo {
-    color: var(--acent-color);
+    color: var(--bacground-hero-color);
     font-family: "Raleway",sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    text-decoration: none;
+    text-decoration: none; 
      
 }
- .logo:hover{
-     color: var(--acent-color);
-     font-family: "Raleway",sans-serif;
- }
+.web{
+    color: var(--acent-color);
+}
+
 
  /* Site nav */
 
@@ -50,12 +72,11 @@ li{
 .site-nav .link:focus{
     color: var(--acent-color);
 }
-.site-nav .link{
+.link-portfolio{
+    color: var(--acent-color);
     text-decoration: none;
 }
-
 .button-auth{
-    background-color: var(--main-bacground-color);
     color: var(--primary-text-color);
     font-family: 'Roboto';
 font-weight: 500;
@@ -100,11 +121,7 @@ align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
 }
-.button-main:hover,
-.button-main:focus {
-    background-color: var(--bacground-hero-color);
-    color: var(--main-bacground-color);
-}
+
     
 
 
@@ -117,7 +134,8 @@ font-size: 14px;
 line-height: 1.14;
 
 }
-p{font-family: 'Roboto';
+.team-text{color: var(--primary-text-color);
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -130,7 +148,8 @@ p{font-family: 'Roboto';
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
-text-align: center
+text-align: center;
+letter-spacing: 0.03em;
 }
 /* Team */
 .team-title{
@@ -140,6 +159,7 @@ font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
+letter-spacing: 0.03em;
 }
 
 .team-list .title.secondary{
@@ -150,7 +170,7 @@ font-size: 16px;
 line-height: 1.19;
 }
 .team-list .team-text{
-    color: var(--text-team-color);
+    color:var(--primary-text-color);
     font-family: "Roboto";
 font-size: 16px;
 line-height: 1.9;
@@ -161,6 +181,9 @@ line-height: 1.9;
  .footer {
     background-color:  #2F303A;
  }
+ .studio-footer{
+     color: var(--head-text-color);
+ }
  .map {
      color: var(--head-text-color);
     font-family: "Roboto";
@@ -168,12 +191,12 @@ font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
+letter-spacing: 0.03em;
     text-decoration: none;
  }
  .map:hover,
  .map:focus{
-     background-color: var(--acent-color);
-     color: var(--head-text-color);
+     color: var(--acent-color);
  }
  .mail {
      color: rgba(255, 255, 255, 0.6);
@@ -182,13 +205,13 @@ line-height: 1.71;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
         text-decoration: none;
 
  }
  .mail:hover,
  .mail:focus{
-     background-color: var(--acent-color);
-     color: var(--head-text-color);
+     color: var(--acent-color);
  }
 .telephone{
     color: rgba(255, 255, 255, 0.6);
@@ -197,12 +220,12 @@ line-height: 1.71;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing:0.03em%;
         text-decoration: none;
 }
 .telephone:hover,
 .telephone:focus{
-    background-color: var(--acent-color);
-     color: var(--head-text-color);
+     color: var(--acent-color);
 }
 
 
@@ -214,6 +237,7 @@ line-height: 1.71;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.63;
+letter-spacing: 0.03em;
 }
 .button-portfolio:hover,
 .button-portfolio:focus{
