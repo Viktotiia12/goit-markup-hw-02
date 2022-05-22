@@ -41,12 +41,14 @@ button {
 .list{
 list-style: none;
 padding-left: 0;
-margin: 0;
+margin: 0;}
+
+.list{
 color:var(--secondary-hesd-color);
 font-family: 'Roboto';
 font-weight: 500;
-font-size: 1.14;
-line-height: 16px;
+font-size: 14px;
+line-height:1.14;
 letter-spacing: 0.02em;
 }
 
@@ -59,12 +61,16 @@ text-decoration: none;
 color:var(--secondary-hesd-color);
 font-family: 'Roboto';
 font-weight: 500;
-font-size: 1.14;
-line-height: 16px;
+font-size: 16px;
+line-height: 1.14;
 letter-spacing: 0.02em;
 }
 .link:hover,
 .link:focus{
+    color: var(--acent-color);
+
+}
+.studia{
     color: var(--acent-color);
 
 }
@@ -105,7 +111,7 @@ text-decoration: none;
 }
 .button-auth:hover,
 .button-auth:focus{
-    background-color: var(--main-bacground-color);
+    background-color: var(--bacground-hero-color);
     color: var(--acent-color);
 }
 /* site autintification */
@@ -200,7 +206,7 @@ line-height: 1.19;
     color:var(--primary-text-color);
     font-family: "Roboto";
 font-size: 16px;
-line-height: 1.9;
+line-height: 1.91;
     
 }
     
@@ -258,7 +264,7 @@ letter-spacing: 0.03em;
 
  /* Potfolio */
 .button-portfolio {
-    background-color: var(--text-team-color);
+    background-color: var(--team-background-color);
     color: var(--secondary-hesd-color);
     font-family: "Roboto";
 font-weight: 500;
@@ -286,6 +292,7 @@ letter-spacing: 0.03em;
 }
 .examples-text{
     color: var(--primary-text-color);
+    font-weight: 400;
 font-size: 16px;
 line-height: 1.88
 }
